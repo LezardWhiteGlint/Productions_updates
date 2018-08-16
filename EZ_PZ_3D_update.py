@@ -67,6 +67,7 @@ def update():
     login(driver,url,account_xpath,password_xpath,login_xpath,account_content,password_content)
     start_date_real = start_date
     page_navi(Collection,driver,sleep_time,start_date_real,end_date)
+    driver.quit()
 
 if __name__ == '__main__':
     update()
